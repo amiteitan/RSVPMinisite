@@ -1,0 +1,84 @@
+@CHARSET "utf-8";
+	 /* http://en.wikipedia.org/wiki/Web_colors */
+
+	body {
+    background: url('images/asi_avital.JPG);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover;
+}
+
+img {
+	width: 50px;
+}
+
+.ui-page {
+    background: transparent;
+}
+/*	 .ui-page { background: #ffffe0;} */
+.ui-content{
+    background: transparent;
+}
+  
+	#map{
+        height: 350px;
+        width: 90%;
+        border: solid thin #333;
+        margin-top: 20px;
+       	margin-left: auto;
+    	margin-right: auto; 
+      	}
+    #titleImg
+    {
+    	width: 250px;
+    }
+	
+	.validateTips { border: 1px solid transparent; padding: 0.3em; }
+	
+	.center {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	}
+	
+	.fieldsetWrapper{
+	width: 300px; 
+	margin: 0 auto;
+    text-align: center;
+	}
+	
+	.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a/*{borderColorError}*/; background: #fef1ec/*{bgColorError}*/ url(images/ui-bg_glass_95_fef1ec_1x400.png)/*{bgImgUrlError}*/ 50%/*{bgErrorXPos}*/ 50%/*{bgErrorYPos}*/ repeat-x/*{bgErrorRepeat}*/; color: #cd0a0a/*{fcError}*/; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a/*{fcError}*/; }
+	
+.ui-autocomplete{
+  position: absolute;
+  background: #FFF;
+  border: solid 1px #DDDDDD;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+}
+.ui-autocomplete .ui-menu-item {
+  clear: left;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.ui-autocomplete .ui-menu-item a {
+  display: block;
+  line-height: 1.5;
+  padding: 0.2em 0.4em;
+  text-decoration: none;
+  color: black;
+  font-family: Helvetica,Arial,sans-serif;
+}
+	
+ .ui-autocomplete-loading {
+        background: white url('http://www.mimavima.com/maria/images/ui-anim_basic_16x16.gif') left center no-repeat;
+    }
+	
+
+      	

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+<title>Contactable 1.5| jQuery Contact Plugin</title>
+<link rel="stylesheet" href="demo.css" type="text/css" />
+</head>
+<body>
+
+<!--start contactable -->
+<div id="my-contact-div" dir="rtl"><!-- contactable html placeholder --></div>
+
+<link rel="stylesheet" href="contactable.css" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.contactable.js"></script>
+
+<script>
+	jQuery(function(){
+		jQuery('#my-contact-div').contactable(
+        {
+            subject: 'feedback URL:'+location.href,
+            url: 'mail.php',
+            name: 'שם',
+            email: 'דוא"ל',
+            dropdownTitle: 'על מה רציתם לספר לנו?',
+            dropdownOptions: ['כללי', 'תקלה באתר', 'הצעה לשיפור'],
+            message : 'ההודעה',
+            submit : 'שלח',
+            recievedMsg : 'תודה על ההודעה נחזור אליכם בהקדם',
+            notRecievedMsg : 'מצטערים אבל היתה תקלה וההודעה לא נשלחה, אנא נסו שוב',
+            disclaimer: 'נשמח לשמוע כל מה שיש לכם לומר, אנו מעריכים כל הערה והארה והיא תעזור לנו להשתפר בגרסא הבאה',
+            hideOnSubmit: true
+        });
+	});
+</script>
+<!--end contactable -->
+
+<div id="page">
+	<h2> &laquo; Click the contact link on the left</h2>
+</div>
+</body>
+</html>
